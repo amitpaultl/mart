@@ -1,0 +1,56 @@
+/*-------------------------
+16.facts-area
+--------------------------*/
+.facts-area {
+     .single-facts {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 25%;
+          height: 90px;
+          border-right: 1px solid #CCCCCC;
+          &:last-child {
+               border-right: none;
+          }
+          i {
+               display: inline-block;
+               margin-right: 1rem;
+          }
+          h4 {
+               display: inline-block;
+               margin: 0;
+               font-family: $titlefont;
+               font-size: 2rem;
+               line-height: 1;
+               font-weight: 600;
+               text-transform: capitalize;
+               color: #333333;
+          }
+     }
+}
+@media (max-width: 991px) {
+     .facts-area .single-facts h4 {
+          font-size: 1.5rem;
+     }
+}
+@media (max-width: 767px) {
+     .facts-area .single-facts {
+          width: 50%;
+     }
+     .facts-area .single-facts:nth-child(2) {
+          border-right: none;
+     }
+}
+@media (max-width: 320px) {
+     .facts-area .single-facts {
+          width: 100%;
+     }
+     .facts-area .single-facts {
+          border-right: none;
+          border-bottom: 1px solid #CCCCCC;
+          height: 60px;
+     }
+     .facts-area .single-facts:last-child {
+          border-bottom: none;
+     }
+}

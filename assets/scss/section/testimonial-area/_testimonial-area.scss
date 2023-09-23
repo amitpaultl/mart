@@ -1,0 +1,154 @@
+/*-------------------------
+14.testimonial-area
+--------------------------*/
+.testimonial-slider {
+     margin: 0 -15px;
+     .slick-slide {
+          margin: 0 15px;
+     }
+     .arrow-prev {
+          text-align: left;
+          left: -65px;
+          &:after {
+               right: 0;
+          }
+     }
+     .arrow-next {
+          text-align: right;
+          right: -65px;
+          &:after {
+               left: 0;
+          }
+     }
+     .slick-arrow {
+          position: absolute;
+          top: 50% ;
+          transform: translateY(-50%);
+          width: 47px;
+          height: 45px;
+          line-height: 45px;
+          z-index: 1;
+          font-size: 2rem;
+          overflow: hidden;
+          color: #000000;
+          cursor: pointer;
+          transition: $transition;
+          &:after {
+               position: absolute;
+               content: '';
+               width: 80%;
+               height: 100%;
+               background: #D2E4C7;
+               z-index: -1;
+               top: 0;
+               transition: $transition;
+          }
+          &:hover {
+               &:after {
+                    background: var(--hover-color);
+               }
+          }
+     }
+     .single-testimonial {
+          padding: 4rem 3rem;
+          background: #EBFAE8;
+          transition: $transition;
+          &:hover {
+               background: var(--white);
+          }
+          .testimonial-header {
+               margin-bottom: 2rem;
+               h3 {
+                    margin-bottom: 1rem;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color: var(--black);
+               }
+               .rating-area {
+                    margin: 0;
+                    padding: 0;
+                    li {
+                         display: inline-block;
+                         list-style: none;
+                         color: #D7D0B0;
+                         transition: $transition;
+                         cursor: pointer;
+                         &:hover {
+                              color: #FBD100;
+                         }
+                         &.checked {
+                              color: #FBD100;
+                         }
+                    }
+               }
+          }
+          .testimonial-body {
+               margin-bottom: 3rem;
+               p {
+                    margin: 0;
+                    font-size: 1.6rem;
+                    line-height: 2.8rem;
+                    color: #666666;
+               }
+          }
+          .testimonial-footer {
+               .clint-name {
+                    margin: 0;
+                    margin-bottom: .5rem;
+                    font-family: $bodyFont;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color: var(--black);
+                    a {
+                         color: var(--black);
+                         transition: $transition;
+                         &:hover {
+                              color: var(--hover-color);
+                         }
+                    }
+               }
+               .clint-pro {
+                    display: block;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    color: #666666;
+               }
+          }
+     }
+}
+@media (max-width: 1300px) {
+     .testimonial-slider  {
+          .slick-arrow {
+               opacity: 0;
+               transition: $transition;
+          }
+          .arrow-prev {
+               left: 0;
+          }
+          .arrow-next {
+               right: 0;
+          }
+          &:hover {
+               .slick-arrow {
+                    opacity: 1;
+               }
+          }
+     }
+}
+@media (max-width: 480px) {
+     .testimonial-slider .single-testimonial {
+          padding: 3rem 2rem;
+     }
+}
+@media (max-width: 414px) {
+     .testimonial-slider .single-testimonial .testimonial-body p {
+          font-size: 1.4rem;
+          line-height: 2.4rem;
+     }
+     .testimonial-slider .single-testimonial .testimonial-footer .clint-name {
+          font-size: 1.6rem;
+     }
+}

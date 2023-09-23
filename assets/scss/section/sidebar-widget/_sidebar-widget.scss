@@ -1,0 +1,201 @@
+/*-------------------------
+18.sidebar-widget
+--------------------------*/
+.sidebar-widget {
+     .single-widget {
+          margin-bottom: 5rem;
+          &:last-child {
+               margin-bottom: 0;
+          }
+          .widget-title {
+               margin-bottom: 2rem;
+               font-size: 2.4rem;
+               font-weight: 600;
+               text-transform: capitalize;
+               color: #333333;
+          }
+     }
+     .search-widget {
+          .form-group {
+               position: relative;
+               .form-control {
+                    width: 100%;
+                    height: 60px;
+                    padding: 0 1.5rem;
+                    border-radius: 0;
+                    border: 1px solid #CCCCCC;
+                    font-family: $bodyFont;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    color: #666666;
+               }
+               button {
+                    position: absolute;
+                    right: 15px;
+                    top: 18px;
+                    padding: 0;
+                    border: none;
+                    background: transparent;
+                    transition: $transition;
+                    &:hover {
+                         color: var(--hover-color);
+                    }
+               }
+          }
+     }
+     .categories-widget {
+          ul {
+               margin: 0;
+               padding: 0;
+               li {
+                    display: block;
+                    list-style: none;
+                    margin-bottom: 1.5rem;
+                    &:last-child {
+                         margin-bottom: 0;
+                    }
+                    a {
+                         display: block;
+                         font-size: 1.6rem;
+                         font-weight: 400;
+                         text-transform: capitalize;
+                         color: #666666;
+                         transition: $transition;
+                         &:hover {
+                              color: var(--hover-color);
+                         }
+                         .categories-count {
+                              float: right;
+                         }
+                    }
+               }
+          }
+     }
+     .popular-post-widget {
+          ul {
+               margin: 0;
+               padding: 0;
+               li {
+                    list-style: none;
+                    margin-bottom: 3rem;
+                    &:last-child {
+                         margin-bottom: 0;
+                    }
+                    .post-thumbnail {
+                         width: 10rem;
+                         height: 10rem;
+                    }
+                    .post-time {
+                         display: block;
+                         margin-bottom: 5px;
+                         font-family: $bodyFont;
+                         font-size: 1.6rem;
+                         color: var(--black);
+                    }
+                    .post-title {
+                         font-family: $titlefont;
+                         font-size: 1.8rem;
+                         line-height: 2.5rem;
+                         color: var(--black);
+                         transition: $transition;
+                         a {
+                              color: var(--black);
+                              &:hover {
+                                   color: var(--hover-color);
+                              }
+                         }
+                    }
+               }
+          }
+     }
+     .archives-widget {
+          ul {
+               margin: 0;
+               padding: 0;
+               li {
+                    display: block;
+                    list-style: none;
+                    margin-bottom: 1.5rem;
+                    &:last-child {
+                         margin-bottom: 0;
+                    }
+                    a {
+                         display: block;
+                         font-size: 1.6rem;
+                         font-weight: 400;
+                         text-transform: capitalize;
+                         color: #666666;
+                         transition: $transition;
+                         &:hover {
+                              color: var(--hover-color);
+                         }
+                         .categories-count {
+                              float: right;
+                         }
+                    }
+               }
+          }
+     }
+     .tags-widget {
+          ul {
+               margin: 0;
+               padding: 0;
+               li {
+                    display: inline-block;
+                    list-style: none;
+                    margin-bottom: 10px;
+                    margin-right: 6px;
+                    a {
+                         display: inline-block;
+                         padding: 5px 10px;
+                         background: #EEEEEE;
+                         font-size: 1.5rem;
+                         font-weight: 400;
+                         text-transform: capitalize;
+                         color: #666666;
+                         transition: $transition;
+                         &:hover {
+                              background: var(--hover-color);
+                              color: var(--white);
+                         }
+                    }
+               }
+          }
+     }
+}
+@media (max-width: 1199px) {
+     .sidebar-widget .popular-post-widget ul li .post-thumbnail {
+          width: 9rem;
+          height: 9rem;
+     }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.sidebar-widget .popular-post-widget ul li .post-thumbnail {
+          width: 6rem;
+          height: 6rem;
+     }
+     .sidebar-widget .popular-post-widget ul li .post-title {
+          font-size: 1.4rem;
+          line-height: 2rem;
+     }
+     .sidebar-widget .popular-post-widget ul li .post-time {
+          font-size: 1.2rem;
+     }
+     .sidebar-widget .archives-widget ul li a {
+          font-size: 1.4rem;
+     }
+     .sidebar-widget .tags-widget ul li a {
+          font-size: 1.4rem;
+     }
+}
+@media (max-width: 767px) {
+     .sidebar-widget {
+          margin-top: 5rem;
+     }
+}
+@media (max-width: 320px) {
+     .sidebar-widget .popular-post-widget ul li .post-thumbnail {
+          width: 8rem;
+          height: 8rem;
+     }
+}

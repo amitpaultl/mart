@@ -1,0 +1,42 @@
+/*-------------------------
+21.primary-form
+--------------------------*/
+.primary-form {
+     .form-title {
+          margin-bottom: 1.5rem;
+          font-family: $titlefont;
+          font-size: 2.4rem;
+          text-transform: capitalize;
+          font-weight: 600;
+          color: #333333;
+     }
+     .form-group {
+          margin-bottom: 20px;
+          label {
+               font-family: $bodyFont;
+               font-size: 16px;
+               font-weight: 400;
+               text-transform: capitalize;
+               color: #666666;
+          }
+          .form-control {
+               width: 100%;
+               height: 50px;
+               padding: 10px 15px;
+               border: 1px solid #CCCCCC;
+               border-radius: 0;
+               font-family: $bodyFont;
+               font-size: 16px;
+               font-weight: 400;
+               color: #666666;
+          }
+          .note-box {
+               height: 100px;
+               resize: none;
+          }
+          .message-box {
+               height: 130px;
+               resize: none;
+          }
+     }
+}

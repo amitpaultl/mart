@@ -1,0 +1,84 @@
+.terms-conditions-area {
+     .conditions-upate-title {
+          margin-bottom: 20px;
+          font-size: 20px;
+          font-weight: 600;
+          text-transform: capitalize;
+          color: #333333;
+     }
+     .single-conditions {
+          margin-bottom: 30px;
+          .conditions-title {
+               margin-bottom: 15px;
+               font-size: 20px;
+               font-weight: 600;
+               text-transform: capitalize;
+               color: #333333;
+          }
+          p {
+               margin-bottom: 15px;
+               font-size: 18px;
+               line-height: 32px;
+               color: #666666;
+          }
+     }
+     .conditions-form {
+          .form-check {
+               margin-bottom: 30px;
+               .form-check-input {
+                    width: 20px;
+                    height: 20px;
+                    margin-top: 3px;
+               }
+               .form-check-label {
+                    padding-left: 20px;
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: #333333;
+                    cursor: pointer;
+               }
+          }
+          .terms-btn {
+               background: #333333;
+               color: #ffffff;
+               width: 155px;
+               height: 46px;
+               text-align: center;
+               border: none;
+               font-size: 15px;
+               font-weight: 600;
+               text-transform: capitalize;
+               transition: $transition;
+               &:hover {
+                    background: var(--hover-color);
+                    color: var(--white);
+               }
+          }
+          .cancel-btn {
+               background: #EEEEEE;
+               color: #333333;
+               margin-left: 15px;
+          }
+     }
+}
+@media (max-width: 767px) {
+     .terms-conditions-area .single-conditions p {
+          font-size: 14px;
+          line-height: 24px;
+     }
+     .terms-conditions-area .conditions-form .form-check .form-check-label {
+          padding-left: 15px;
+          font-size: 14px;
+          line-height: 18px;
+     }
+     .terms-conditions-area .conditions-upate-title {
+          font-size: 16px;
+     }
+}
+@media (max-width: 480px) {
+     .terms-conditions-area .conditions-form .terms-btn {
+          width: auto;
+          height: 46px;
+          padding: 0 25px;
+     }
+}

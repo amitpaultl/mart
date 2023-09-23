@@ -1,0 +1,156 @@
+.order-list-table {
+     .table {
+          width: 100%;
+          border-collapse: separate;  
+          border-spacing: 0 20px;
+          margin: 0;
+          tr {
+               td {
+                    padding: 0;
+               }
+          }
+     }
+     .songle-order {
+          padding: 15px;
+          background: #fafafa;
+          .order-info-top {
+               padding-bottom: 18px;
+               margin-bottom: 20px;
+               border-bottom: 1px solid #CCCCCC;
+               .text-box {
+                    h3 {
+                         margin: 0;
+                         margin-bottom: 5px;
+                         font-size: 16px;
+                         font-weight: 600;
+                         text-transform: capitalize;
+                         color: #333333;
+                    }
+                    p {
+                         font-size: 12px;
+                         line-height: 1;
+                         color: #666666;
+                         margin: 0;
+                    }
+                    &:first-child {
+                         width: 45%;
+                    }
+                    &:nth-child(2) {
+                         width: 35%;
+                    }
+                    &:nth-child(3) {
+                         width: 20%;
+                    }
+               }
+          }
+          .order-info-bottom {
+               .order-bottom-box {
+                    .item-iamge {
+                         width: 50px;
+                         height: 50px;
+                         margin-right: 5px;
+                    }
+                    &:first-child {
+                         width: 45%;
+                    }
+                    &:nth-child(2) {
+                         width: 35%;
+                    }
+                    &:nth-child(3) {
+                         width: 20%;
+                    }
+               }
+               .order-btn {
+                    display: inline-block;
+                    border: none;
+                    width: 125px;
+                    height: 46px;
+                    line-height: 46px;
+                    background: #7ACA82;
+                    text-align: center;
+                    font-size: 15px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    color: var(--white);
+                    transition: $transition;
+                    &.style-two {
+                         background: #333333;
+                    }
+                    &:hover {
+                         color: var(--white);
+                         background: var(--hover-color);
+                    }
+               }
+          }
+     }
+}
+@media (max-width: 767px) {
+     .order-list-table .songle-order .order-info-bottom .order-bottom-box .item-iamge {
+          width: 30px;
+          height: 30px;
+     }
+     .order-list-table .songle-order .order-info-top .text-box:first-child {
+          width: 33%;
+     }
+     .order-list-table .songle-order .order-info-top .text-box:nth-child(2) {
+          width: 33%;
+     }
+     .order-list-table .songle-order .order-info-top .text-box:nth-child(3) {
+          width: 33%;
+     }
+     .order-list-table .songle-order .order-info-bottom .order-bottom-box:first-child {
+          width: 33%;
+     }
+     .order-list-table .songle-order .order-info-bottom .order-bottom-box:nth-child(2) {
+          width: 33%;
+     }
+     .order-list-table .songle-order .order-info-bottom .order-bottom-box:nth-child(3) {
+          width: 33%;
+     }
+}
+@media (max-width: 480px) {
+     .order-list-table .songle-order .order-info-bottom .order-bottom-box .item-iamge {
+          width: 30px;
+          height: 30px;
+     }
+     .order-list-table .songle-order .order-info-top .text-box:first-child {
+          width: 33%;
+     }
+     .order-list-table .songle-order .order-info-top .text-box:nth-child(2) {
+          width: 25%;
+     }
+     .order-list-table .songle-order .order-info-top .text-box:nth-child(3) {
+          width: 25%;
+     }
+     .order-list-table .songle-order .order-info-bottom .order-bottom-box:first-child {
+          width: 33%;
+     }
+     .order-list-table .songle-order .order-info-bottom .order-bottom-box:nth-child(2) {
+          width: 25%;
+     }
+     .order-list-table .songle-order .order-info-bottom .order-bottom-box:nth-child(3) {
+          width: 25%;
+     }
+}
+@media (max-width: 480px) {
+     .order-list-table .table {
+          width: 100%;
+     }
+     .order-list-table .songle-order .order-info-bottom .order-btn {
+          width: 90px;
+          height: 30px;
+          line-height: 30px;
+          font-size: 12px;
+     }
+     .order-list-table .songle-order .order-info-top .text-box h3 {
+          font-size: 12px;
+     }
+     .order-list-table .songle-order .order-info-top .text-box p {
+          font-size: 10px;
+     }
+}
+@media (max-width: 460px) {
+     .order-list-table .table {
+          width: 400px;
+     }
+}

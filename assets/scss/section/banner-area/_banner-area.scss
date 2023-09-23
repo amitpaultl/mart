@@ -1,0 +1,75 @@
+/*-------------------------
+7.banner-area
+--------------------------*/
+.banner-area {
+     padding-bottom: 7rem;
+     .single-banenr {
+          position: relative;
+          margin-bottom: 3rem;
+          .banenr-thumbnail {
+               img {
+                    width: 100%;
+                    height: auto;
+               }
+          }
+          .banner-info {
+               position: absolute;
+               padding: 3rem;
+               left: 0;
+               top: 50%;
+               transform: translateY(-50%);
+               .banenr-sub-title {
+                    font-family: $titlefont;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    color: #000000;
+               }
+               .banenr-title {
+                    font-family: $titlefont;
+                    font-size: 2.2rem;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color: #333333;
+               }
+               .banner-btn {
+                    font-family: $bodyFont;
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    color: #273647;
+                    transition: $transition;
+                    i {
+                         margin-left: 5px;
+                    }
+                    &:hover {
+                         color: var(--hover-color);
+                    }
+               }
+          }
+          &.small-banner {
+               .banner-info  {
+                    left: 52%;
+               }
+          }
+          &.medium-banner {
+               .banner-info  {
+                    top: 25%;
+               }
+          }
+     }
+}
+@media (max-width: 1199px) {
+     .banner-area .single-banenr .banner-info {
+          padding: 2rem;
+     }
+     .banner-area .single-banenr.small-banner .banner-info {
+          left: 50%;
+     }
+}
+
+@media (max-width: 767px) {
+     .banner-area {
+          padding-bottom: 3rem;
+     }
+}

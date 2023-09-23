@@ -1,0 +1,32 @@
+/*-------------------------
+6.brand-area
+--------------------------*/
+.brand-area {
+     padding: 8rem 0;
+     .brand-slide {
+          margin: 0 -15px;
+          .slick-slide {
+               margin: 0 15px;
+          }
+          .single-brand {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               height: 45px;
+               img {
+                    opacity: .6;
+                    transition: $transition;
+               }
+               &:hover {
+                   img {
+                    opacity: 1;
+                   }
+               }
+          }
+     }
+}
+@media (max-width: 575px) {
+     .brand-area {
+          padding: 3rem 0;
+     }
+}

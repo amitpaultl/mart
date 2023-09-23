@@ -1,0 +1,134 @@
+.copune-code-table {
+     .table {
+          width: 100%;
+          border-collapse: separate;  
+          border-spacing: 0 20px;
+          margin: 0;
+          tr {
+               td {
+                    padding: 15px 10px;
+                    background: #F2F2F2;
+                    vertical-align: middle;
+                    
+               }
+               &:last-child {
+                    .cupon-code-dropdown {
+                         .dropdown-menu {
+                              transform: translate3d(-15px, 38px, 0px) !important;
+                         }
+                    }
+               }
+               &:nth-of-type(10n) {
+                    .cupon-code-dropdown {
+                         .dropdown-menu {
+                              transform: translate3d(-15px, 38px, 0px) !important;
+                         }
+                    }
+               }
+          }
+     }
+     .cupon-info {
+          .shop-brand-logo {
+               width: 50px;
+               height: 50px;
+               border-radius: 50%;
+          }
+          h4 {
+               margin: 0;
+               font-size: 16px;
+               font-weight: 600;
+               text-transform: capitalize;
+               color: #333333;
+          }
+          p {
+               margin: 0;
+               font-size: 12px;
+               line-height: 20px;
+               color: #666666;
+          }
+     }
+     .cupon-code-dropdown {
+          .cupon-btn {
+               padding: 5px 15px;
+               background: #333333;
+               color: #ffffff;
+               border: none;
+               cursor: pointer;
+               &:after {
+                    display: none;
+               }
+          }
+          .dropdown-menu {
+               position: relative;
+               width: 159px;
+               height: 35px;
+               background: #FFFFFF;
+               box-shadow: 0px 0px 40px rgba(174, 158, 158, 0.25);
+               border: none;
+               transform: translate3d(-15px, 50px, 0px) !important;
+               &:after {
+                    position: absolute;
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-bottom: 12px solid #ffffff;
+                    border-left: 7px solid transparent;
+                    border-right: 7px solid transparent;
+                    bottom: 100%;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    margin: 0 auto;
+
+               }
+               span {
+                    display: block;
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #333333;
+                    text-align: center;
+               }
+          }
+     }
+     .expire-date {
+          display: block;
+          font-size: 15px;
+          line-height: 20px;
+          font-weight: 400;
+          color: #333333;
+     }
+}
+@media (max-width: 991px) {
+     .copune-code-table .expire-date {
+          font-size: 12px;
+     }
+     .copune-code-table .cupon-code-dropdown .cupon-btn {
+          padding: 5px 10px;
+          font-size: 12px;
+     }
+     .copune-code-table .cupon-info .shop-brand-logo {
+          width: 40px;
+          height: 40px;
+     }
+     .copune-code-table .cupon-info h4 {
+          font-size: 14px;
+     }
+     .copune-code-table .table tr td:first-child {
+          min-width: 280px;
+     }
+}
+@media (max-width: 767px) {
+     .copune-code-table .table {
+          min-width: 100%;
+     }
+     .copune-code-table .table tr td:nth-child(2) {
+          min-width: 80px;
+     }
+     .copune-code-table .table tr td:last-child {
+          min-width: 150px;
+     }
+     .copune-code-table .cupon-info .shop-brand-logo {
+          width: 30px;
+          height: 30px;
+     }
+}

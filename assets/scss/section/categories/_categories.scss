@@ -1,0 +1,157 @@
+/*-------------------------
+9.categories-area
+--------------------------*/
+.categories-area {
+     .products-categories-list {
+          margin: 0 -15px;
+          .slick-slide {
+               margin: 0 15px;
+          }
+          .slick-arrow {
+               position: absolute;
+               top: 50% ;
+               transform: translateY(-50%);
+               width: 47px;
+               height: 45px;
+               line-height: 45px;
+               z-index: 1;
+               font-size: 2rem;
+               overflow: hidden;
+               color: #000000;
+               cursor: pointer;
+               transition: $transition;
+               &:after {
+                    position: absolute;
+                    content: '';
+                    width: 80%;
+                    height: 100%;
+                    background: #D2E4C7;
+                    z-index: -1;
+                    top: 0;;
+               }
+          }
+          .arrow-prev {
+               text-align: left;
+               left: -65px;
+               &:after {
+                    right: 0;
+               }
+          }
+          .arrow-next {
+               text-align: right;
+               right: -65px;
+               &:after {
+                    left: 0;
+               }
+          }
+     }
+     .single-categorie {
+          position: relative;
+          overflow: hidden;
+          .categorie-thumbnail {
+               margin-bottom: 2rem;
+               img {
+                    width: 100%;
+               }
+          }
+          .categorie-title {
+               margin: 0;
+               font-size: 1.8rem;
+               font-weight: 600;
+               text-transform: capitalize;
+               color: var(--black);
+          }
+          .categorie-overlay {
+               position: absolute;
+               left: 0;
+               top: 0;
+               width: 100%;
+               height: 100%;
+               opacity: 0;
+               visibility: hidden;
+               transition: $transition;
+               background-image: url('../images/categories/categorie-hover-image.png');
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-position: center;
+               .overlay-thumbnail {
+                    img {
+                         width: 100%;
+                         height: 100%;
+                    }
+               }
+               .overlay-info {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    position: absolute;
+                    background: rgba(0, 0, 0, 0.61);
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    .overlay-title {
+                         margin-bottom: 1.5rem;
+                         font-size: 1.8rem;
+                         font-weight: 600;
+                         text-transform: capitalize;
+                         color: var(--white);
+                    }
+                    .categorie-btn {
+                         display: inline-block;
+                         width: 4rem;
+                         height: 4rem;
+                         line-height: 4.3rem;
+                         border-radius: 50%;
+                         background: var(--white);
+                         color: #232323;
+                         transition: $transition;
+                         &:hover {
+                              background: var(--hover-color);
+                              color: var(--white);
+                         }
+                    }
+               }
+          }
+          &:hover {
+               .categorie-overlay {
+                    opacity: 1;
+                    visibility: visible;
+               }
+          }
+     }
+}
+@media (max-width: 1300px) {
+     .categories-area {
+          .products-categories-list {
+               .slick-arrow {
+                    opacity: 0;
+                    transition: $transition;
+               }
+               .arrow-prev {
+                    left: 0;
+               }
+               .arrow-next {
+                    right: 0;
+               }
+               &:hover {
+                    .slick-arrow {
+                         opacity: 1;
+                    }
+               }
+          }
+     }
+     
+}
+@media (max-width: 1199px) {
+     .categories-area .single-categorie .categorie-title {
+          font-size: 1.5rem;
+     }
+}
+@media (max-width: 767px) {
+     .categories-area.section-top.pb-70 {
+          padding-bottom: 6rem;
+     }
+}

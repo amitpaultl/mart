@@ -1,0 +1,112 @@
+.my-profile-form {
+     .form-group {
+          margin-bottom: 25px;
+          .form-control {
+               width: 100%;
+               height: 50px;
+               background: #F2F2F2;
+               border: 1px solid #DFDEDE;
+               padding: 10px 15px;
+               border-radius: 0;
+               font-family: $bodyFont;
+               font-size: 15px;
+               font-weight: 400;
+               color: #666666;
+          }
+          .comment-box {
+               height: 125px;
+          }
+          #country-code {
+               width: 80px;
+               border-right: none;
+               padding: 0 5px;
+               line-height: 50px;
+               text-align: center;
+          }
+          .gender-text {
+               width: 100px;
+               padding: 0 ;
+               text-align: center;
+               line-height: 50px;
+               border-right: none;
+          }
+          .flat-image {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               width: 80px;
+               padding: 0 ;
+               text-align: center;
+               border-right: none;
+          }
+     }
+     .form-check {
+          .form-check-input {
+               width: 25px;
+               height: 25px;
+               border: 1px solid #333333;
+               margin-top: 1px;
+          }
+          .form-check-label {
+               font-family: $titlefont;
+               font-size: 16px;
+               line-height: 20px;
+               font-weight: 400;
+               color: #333333;
+               padding-left: 25px;
+               cursor: pointer;
+          }
+     }
+     .form-btn {
+          display: inline-block;
+          width: 131px;
+          height: 46px;
+          border: 1px solid #333333;
+          background: #333333;
+          font-family: $bodyFont;
+          font-size: 15px;
+          font-weight: 400;
+          text-transform: capitalize;
+          color: #ffffff;
+          transition: $transition;
+          &.form-btn-outline {
+               background: transparent;
+               border-color: #666666;
+               color: #666666;
+          }
+          &:hover {
+               color: #ffffff;
+               background: var(--hover-color);
+               border-color: var(--hover-color);
+          }
+     }
+     .address-text {
+          font-size: 14px;
+          line-height: 28px;
+          color: #333333;
+     }
+}
+@media (max-width: 480px) {
+     .my-profile-form .form-check .form-check-input {
+          width: 15px;
+          height: 15px;
+          margin-top: 7px;
+      }
+     .my-profile-form .form-check .form-check-label {
+          font-size: 14px;
+          line-height: 16px;
+          padding-left: 8px;
+     }
+}
+
+@media (max-width: 375px) {
+     .my-profile-form .form-buttons .form-btn {
+          width: auto;
+          height: 40px;
+          padding: 5px 20px;
+          font-size: 12px;
+     }
+     .form-btn.form-btn-outline.ml-4 {
+          margin-left: 5px !important;
+     }
+}

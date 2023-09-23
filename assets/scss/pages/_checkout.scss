@@ -1,0 +1,54 @@
+.checkout-info {
+     .title-wrap {
+          margin-bottom: 16px;
+          font-family: $titlefont;
+          font-size: 20px;
+          font-weight: 600;
+          text-transform: capitalize;
+          color: #333333;
+     }
+     .grand-totall {
+          .grand-total-list {
+               margin-bottom: 10px;
+               padding: 0;
+               li {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px 0;
+                    list-style: none;
+                    font-family: $bodyFont;
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: #333333;
+                    border-top: 1px solid #E7E7E7;
+                    &:first-child {
+                         border-top: none;
+                         padding-top: 0;
+                    }
+               }
+          }
+     }
+}
+.discount-code-wrappe {
+     .label-text {
+          margin-bottom: 6px;
+          font-family: $bodyFont;
+          font-size: 16px;
+          font-weight: 400;
+          text-transform: capitalize;
+          color: #666666;
+     }
+     .discount-form {
+          .form-control {
+               width: 100%;
+               height: 50px;
+               padding: 10px ;
+               border: 1px solid #CCCCCC;
+               border-radius: 0;
+               font-family: $bodyFont;
+               font-size: 16px;
+               font-weight: 400;
+               color: #666666;
+          }
+     }
+}

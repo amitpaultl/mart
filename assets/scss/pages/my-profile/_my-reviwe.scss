@@ -1,0 +1,86 @@
+.product-reviwe-table {
+     .table {
+          width: 100%;
+          border-collapse: separate;  
+          border-spacing: 0 20px;
+          margin: 0;
+          tr {
+               td {
+                    padding: 15px 10px;
+                    background: #F2F2F2;
+                    vertical-align: middle;
+               }
+          }
+     }
+     .review-list {
+          margin: 0;
+          padding: 0;
+          li {
+               display: inline-block;
+               font-size: 14px;
+               color: #F79E1B;
+               cursor: pointer;
+          }
+     }   
+     p {
+          margin: 0;
+          font-size: 15px;
+          line-height: 16px;
+          color: #333333;
+     } 
+     .product-info {
+          .product-image {
+               width: 50px;
+               height: 50px;
+          }
+          h4 {
+               font-size: 15px;
+               font-weight: 600;
+               text-transform: capitalize;
+               color: #333333;
+          }
+          .date {
+               display: block;
+               line-height: 1;
+               font-size: 12px;
+               font-weight: 400;
+               color: #666666;
+          }
+     }
+}
+@media (max-width: 767px) {
+     .product-reviwe-table .product-info .product-image {
+          width: 30px;
+          height: 30px;
+     }
+     .product-reviwe-table .product-info h4 {
+          font-size: 13px;
+     }
+     .product-reviwe-table .product-info .date {
+          font-size: 10px;
+     }
+     .product-reviwe-table p {
+          font-size: 12px;
+     }
+     .product-reviwe-table .review-list {
+          display: flex;
+     }
+     .product-reviwe-table .review-list li {
+          font-size: 10px;
+          line-height: 1;
+     }
+     .product-reviwe-table .review-list li  i {
+          line-height: 1;
+     }
+}
+@media (max-width: 480px) {
+     .product-reviwe-table .table tr td:first-child {
+          min-width: 140px
+     }
+     .product-reviwe-table .table tr td:nth-child(2) {
+          min-width: 45px
+     }
+     .product-reviwe-table .table tr td:last-child {
+          min-width: 120px
+     }
+}

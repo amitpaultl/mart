@@ -1,0 +1,36 @@
+.larger-banenr {
+     padding: 7rem 5rem;
+     background-image: url('../images/banner/large-banner-bg.png');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     .banner-title {
+          margin-bottom: 1.5rem;
+          font-size: 6.2rem;
+          font-weight: 600;
+          text-transform: capitalize;
+          color: #E6F8F6;
+     }
+     .banner-content {
+          margin-bottom: 4rem;
+          font-size: 1.6rem;
+          line-height: 2.8rem;
+          color: var(--white);
+     }
+}
+
+@media (max-width: 1199px) {
+     .larger-banenr .banner-title {
+          font-size: 5.2rem;
+     }
+}
+@media (max-width: 480px) {
+     .larger-banenr .banner-title {
+          font-size: 3.8rem;
+     }
+}
+@media (max-width: 480px) {
+     .larger-banenr {
+          padding: 5rem 2.5rem;
+     }
+}

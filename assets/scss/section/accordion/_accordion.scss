@@ -1,0 +1,58 @@
+/*-------------------------
+15.accordion
+--------------------------*/
+.accordion {
+     .card {
+          margin-bottom: 15px;
+          border: none;
+          border-radius: 0;
+          .card-header {
+               padding: 0;
+               border: none;
+               .btn-link {
+                    position: relative;
+                    padding: 0;
+                    padding: 0;
+                    border: none;
+                    background: var(--white);
+                    padding: 13px 40px;
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: #ffffff;
+                    text-decoration: none;
+                    background: #333333;
+                    border-radius: 0;
+                    .qicon {
+                         margin-right: 5px;
+                    }
+                    &:before {
+                         position: absolute;
+                         content: "\f107";
+                         right: 40px;
+                         top: 14px;
+                         font-family: "Font Awesome 5 free";
+                         font-weight: 900;
+                         color: currentColor;
+                         transform: rotate(-180deg);
+                         transition: $transition;
+                    }
+                    &.collapsed {
+                         background: #fafafa;
+                         color: #333333;
+                         &::before {
+                              transform: rotate(0);
+                         }
+                    }
+               }
+          }
+          .card-body {
+               padding: 15px 40px;
+               p {
+                    margin: 0;
+                    font-size: 16px;
+                    line-height: 32px;
+                    color: #666666;
+               }
+          }
+     }
+}

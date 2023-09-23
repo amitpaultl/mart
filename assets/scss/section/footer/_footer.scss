@@ -1,0 +1,188 @@
+/*-------------------------
+3.footer-area
+--------------------------*/
+.footer-area {
+     background: #222222;
+     .widget-area {
+          padding: 10rem 0 7rem 0;
+          .single-widget {
+               margin-bottom: 3rem;
+               .widget-title {
+                    margin-bottom: 3rem;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color: var(--white);
+               }
+               ul {
+                    line-height: 1;
+                    li {
+                         display: block;
+                         margin-bottom: 2rem;
+                         &:last-child {
+                              margin-bottom: 0;
+                         }
+                         a {
+                              display: block;
+                              font-size: 1.6rem;
+                              font-weight: 400;
+                              text-transform: capitalize;
+                              color: var(--white);
+                              transition: $transition;
+                              &:hover {
+                                   color: var(--hover-color);
+                              }
+                         }
+                    }
+               }
+               .contact-info-widget {
+                    margin: 0;
+                    padding: 0;
+                    line-height: 1;
+                    li {
+                         display: block;
+                         list-style: none;
+                         margin-top: -5px;
+                         p {
+                              margin: 0;
+                              font-size: 1.6rem;
+                              line-height: 2.6rem;
+                              color: var(--white);
+                         }
+                         .icon {
+                              margin-top: 3px;
+                              margin-right: 1rem;
+                              color: var(--white);
+                              transition: $transition;
+                         }
+                         &:hover {
+                              .icon {
+                                   transform: rotate(360deg);
+                                   color: var(--hover-color);
+                              }
+                         }
+                    }
+               }
+               .social-media-widget {
+                    li {
+                         display: inline-block;
+                         list-style: none;
+                         margin-right: 1rem;
+                         margin-bottom: 0;
+                         &:last-child {
+                              margin-right: 0;
+                         }
+                         a {
+                              display: inline-block;
+                              width: 3.2rem;
+                              height: 3.2rem;
+                              line-height: 3.4rem;
+                              border-radius: 5px;
+                              background: var(--hover-color);
+                              text-align: center;
+                              color: var(--white);
+                         }
+                         &.facebook {
+                              a {
+                                background: #3C5B9B;   
+                              }
+                         }
+                         &.twitter {
+                              a {
+                                background: #E33729;   
+                              }
+                         }
+                         &.linkedin {
+                              a {
+                                background: #359BED;   
+                              }
+                         }
+                         &.pinterest {
+                              a {
+                                background: #CB2027;   
+                              }
+                         }
+                         &.skype {
+                              a {
+                                background: #027BA5;   
+                              }
+                         }
+                         &:hover {
+                              a {
+                                   background: var(--hover-color);
+                                   color: var(--white);
+                              }
+                         }
+                    }
+               }
+          }
+          .widget-instagram-post {
+               ul {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-flow: row wrap;
+                    column-gap: 1%;
+                    row-gap: 15px;
+                    li {
+                         width: 31%;
+                         margin: 0;
+                         overflow: hidden;
+                         &:hover {
+                              a {
+                                   img {
+                                        transform: scale(1.1);
+                                   }
+                              }
+                         }
+                         a {
+                              display: block;
+                              overflow: hidden;
+                              img {
+                                   width: 100%;
+                                   height: auto;
+                                   transform: scale(1);
+                                   transition: $transition;
+                              }
+                         }
+                    }
+               }
+          }
+     }
+     .footer-bottom {
+          .footer-bottom-wrap {
+               padding: 3rem 0;
+               border-top: 1px solid var(--white);
+          }
+          .copyright-area {
+               p {
+                    margin: 0;
+                    font-size: 1.4rem;
+                    font-weight: 1.4rem;
+                    color: var(--white);
+                    a {
+                         color: var(--white);
+                         transition: $transition;
+                         &:hover {
+                              color: var(--hover-color);
+                         }
+                    }
+               }
+          }
+     }
+}
+@media (max-width: 991px) {
+     .footer-area .widget-area {
+          padding: 6rem 0 3rem 0;
+     }
+     .footer-area .footer-bottom .footer-bottom-wrap {
+          padding: 2rem 0;
+     }
+}
+@media(max-width: 767px) {
+     .footer-bottom {
+          text-align: center;
+     }
+     .copyright-area {
+          margin: 15px 0;
+     }
+}

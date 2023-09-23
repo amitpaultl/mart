@@ -1,0 +1,127 @@
+.profile-left-sidebar {
+     padding: 30px 0;
+     background: #FFFFFF;
+     box-shadow: 0px 0px 40px rgba(182, 181, 181, 0.2);
+     .sidebar-top {
+          margin-bottom: 25px;
+          .user-image {
+               position: relative;
+               margin: 0 auto;
+               width: 65px;
+               height: 65px;
+               border-radius: 50%;
+               img {
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 50%;
+               }
+               .custom-fileuplode {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    .file-uplode-btn {
+                         width: 20px;
+                         height: 20px;
+                         line-height: 21px;
+                         border-radius: 50%;
+                         text-align: center;
+                         background: #FCFBEA;
+                         cursor: pointer;
+                         font-size: 10px;
+                         color: #333333;
+                         margin: 0;
+                         padding-left: 1px;
+                         transition: $transition;
+                         &:hover {
+                              color: var(--white);
+                              background: var(--hover-color);
+                         }
+                    }
+                    input {
+                         display: none;
+                    }
+               }
+          }
+          .user-name {
+               margin-top: 10px;
+               margin-bottom: 0;
+               font-size: 15px;
+               font-weight: 600;
+               text-transform: capitalize;
+               color: #333333;
+          }
+     }
+     .sidebar-menu {
+          ul {
+               margin: 0;
+               padding: 0;
+               li {
+                    list-style: none;
+                    margin-bottom: 12px;
+                    &:last-child {
+                         margin-bottom: 0;
+                    }
+                    a {
+                         display: flex;
+                         align-items: center;
+                         position: relative;
+                         height: 50px;
+                         padding: 0 24px;
+                         background: #F2F2F2;
+                         font-family: $titlefont;
+                         font-size: 15px;
+                         line-height: 1;
+                         font-weight: 400;
+                         text-transform: capitalize;
+                         color: #666666;
+                         transition: $transition;
+                         i {
+                              line-height: 0;
+                              margin-right: 15px;
+                         }
+                         &::before {
+                              position: absolute;
+                              content: '';
+                              width: 3px;
+                              height: 100%;
+                              left: 0;
+                              top: 0;
+                              background: #333333;
+                              opacity: 0;
+                              transition: $transition;
+                         }
+                         &:hover {
+                              background: #FCFBEA;
+                              color: #333333;
+                              &:before {
+                                   opacity: 1;
+                              }
+                         }
+                    }
+                    &.current-menu-items {
+                         a {
+                              background: #FCFBEA;
+                              color: #333333;
+                              &:before {
+                                   opacity: 1;
+                              }
+                         }
+                    }
+               }
+          }
+     }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+	.profile-left-sidebar .sidebar-menu ul li a {
+          padding: 0 15px;
+     }
+     .profile-left-sidebar .sidebar-menu ul li a i {
+          margin-right: 7px;
+     }
+}
+
+@media (max-width: 991px) {
+     .profile-left-sidebar {
+          margin-bottom: 50px;
+     }
+}

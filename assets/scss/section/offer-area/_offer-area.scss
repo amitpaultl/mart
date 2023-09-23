@@ -1,0 +1,71 @@
+/*-------------------------
+11.offer-area
+--------------------------*/
+.offer-area {
+     position: relative;
+     padding: 135px 0;
+     background: url('../images/offer-bg.png');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     z-index: 1;
+     .countdown-time {
+          margin-bottom: 4.5rem;
+     }
+     .offer-top {
+          margin-bottom: 4rem;
+          .title {
+               margin-bottom: 1rem;
+               font-size: 4.8rem;
+               font-weight: 600;
+               text-transform: capitalize;
+               color: var(--black);
+          }
+          .sub-title {
+               font-size: 1.6rem;
+               font-weight: 2.8rem;
+               color: #666666;
+               margin: 0;
+          }
+     }
+     .off-text {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: -25px;
+          font-size: 7rem;
+          font-weight: 700;
+          color: rgba(0, 0, 0, 0.07);
+          -webkit-text-fill-color: transparent;
+          -webkit-text-stroke-width: 1px;
+          z-index: -1;
+     }
+}
+@media (max-width: 1199px) {
+     .offer-area .offer-top .title {
+          font-size: 4.2rem;
+     }
+}
+@media (max-width: 767px) {
+     .offer-area {
+          padding: 70px 0;
+     }
+}
+@media (max-width: 414px) {
+     .offer-area .offer-top .title {
+          font-size: 3.6rem;
+     }
+     .offer-area .off-text {
+          font-size: 5rem;
+     }
+}
+@media (max-width: 375px) {
+     .offer-area .offer-top .title {
+          font-size: 3rem;
+     }
+}
+@media (max-width: 320px) {
+     .offer-area .offer-top .title {
+          font-size: 2.6rem;
+      }
+}

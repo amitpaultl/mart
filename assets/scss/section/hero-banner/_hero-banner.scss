@@ -1,0 +1,66 @@
+/*-------------------------
+4.hero-banner
+--------------------------*/
+.hero-banner-area {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     background-image: url('../images/hero-banner/banner-bg.png');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     padding-top: 3rem;
+     min-height: 700px;
+     .banner-info {
+          .banner-title {
+               margin-bottom: 1.5rem;
+               font-family: $titlefont;
+               font-size: 7.2rem;
+               line-height: 1.1;
+               font-weight: 700;
+               text-transform: capitalize;
+               color: #333333;
+          }
+          .banner-content {
+               margin-bottom: 3rem;
+               font-size: 1.6rem;
+               line-height: 2.8rem;
+               color: #555555;
+               text-decoration: underline;
+          }
+     }
+}
+@media (max-width: 1199px) {
+     .hero-banner-area .banner-info .banner-title {
+          font-size: 5.2rem;
+     }
+}
+@media (max-width: 991px) {
+     .hero-banner-area .banner-info .banner-title {
+          font-size: 4.2rem;
+     }
+     .hero-banner-area {
+          min-height: 600px;
+     }
+}
+@media (max-width: 767px) {
+     .hero-banner-area {
+         padding-top: 6rem;
+     }
+     .hero-banner-area .banner-img {
+          margin-top: 3rem;
+     }
+     .hero-banner-area .banner-info .banner-title {
+          font-size: 5.2rem;
+     }
+}
+@media (max-width: 414px) {
+     .hero-banner-area .banner-info .banner-title {
+          font-size: 4.2rem;
+     }
+}
+@media (max-width: 320px) {
+     .hero-banner-area .banner-info .banner-title {
+          font-size: 3.6rem;
+     }
+}

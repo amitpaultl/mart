@@ -1,0 +1,101 @@
+/*
+------------- Table of content ----------------
+
+Template Name: Zaimart Responsive  HTML5 Template
+Template URI: http://zainiklab.com
+Description: Zaimart Responsive  HTML5 Template
+Author: Gobinda Sarkar
+Author URI: http://zaimart.com
+Version: 1.0
+
+---------------------- common content ----------
+1.body reset content
+2.header area
+3.footer-area
+4.hero-banner
+5.butotn
+6.brand-area
+7.banner-area
+8.section-title
+9.categories-area
+10.products
+11.offer-area
+12.countdown
+13.product-slide
+14.testimonial-area
+15.newsletter-area
+16.facts-area
+17.breadcrumb-area
+18.sidebar-widget
+19.pagination-area
+20.comments
+21.primary-form
+22.team-area
+23.about-area
+24.my-profile
+
+
+
+*/
+
+// variable
+@import "variable/_variable.scss";
+
+// mixin
+@import "mixin/_mixin.scss";
+
+// body reset content
+@import "reset/_predefine.scss";
+
+// component content
+@import "section/preloader/preloader";
+@import "section/header/header";
+@import "section/footer/footer";
+@import "section/hero-banner/hero-banner";
+@import "section/button/button";
+@import "section/brand-area/brand-area";
+@import "section/banner-area/banner-area";
+@import "section/section-title/section-title";
+@import "section/categories/categories";
+@import "section/banner-area/larger-banenr";
+@import "section/products/single-grid-product";
+@import "section/products/single-lsit-product";
+@import "section/offer-area/offer-area";
+@import "section/countdown/countdown";
+@import "section/product-slide/product-slide";
+@import "section/testimonial-area/testimonial-area";
+@import "section/blog/single-grid-blog";
+@import "section/blog/single-blog-details";
+@import "section/newsletter-area/newsletter-area";
+@import "section/facts-area/facts-area";
+@import "section/breadcrumb-area/breadcrumb-area";
+@import "section/sidebar-widget/sidebar-widget";
+@import "section/sidebar-widget/shop-sidebar-widget";
+@import "section/pagination-area/pagination-area";
+@import "section/comments/comments";
+@import "section/main-sidebar/main-sidebar";
+@import "section/primary-form/primary-form";
+@import "section/accordion/accordion";
+@import "section/register/register";
+@import "section/team/team";
+@import "section/about/about";
+
+// page content
+@import "pages/shop";
+@import "pages/checkout";
+@import "pages/payment";
+@import "pages/comfirm";
+@import "pages/wishlist";
+@import "pages/cart";
+@import "pages/faq";
+@import "pages/terms-conditions";
+@import "pages/contact";
+@import "pages/shop-details";
+@import "pages/my-profile/my-profile";
+@import "pages/my-profile/my-profile-form";
+@import "pages/my-profile/profile-left-sidebar";
+@import "pages/my-profile/order-list-table";
+@import "pages/my-profile/order-details-area";
+@import "pages/my-profile/address-book-area";
+@import "pages/my-profile/copune-code-table";
+@import "pages/my-profile/my-reviwe";

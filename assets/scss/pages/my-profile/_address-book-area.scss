@@ -1,0 +1,87 @@
+.address-book-area {
+     .single-address {
+          padding: 20px;
+          border: 1px solid #F2F2F2;
+          .address-info {
+               p {
+                    font-size: 12px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    color: #666666;
+               }
+          }
+          .user-info {
+               color: #333333;
+               p {
+                    color: #333333;
+               }
+          }
+          .eidt-btn {
+               font-family: $titlefont;
+               font-weight: 400;
+               font-size: 15px;
+               text-transform: capitalize;
+               color: #333333;
+               margin-right: 10px;
+               transition: $transition;
+               i {
+                    margin-right: 3px;
+               }
+               &:hover {
+                    color: var(--hover-color);
+               }
+          }
+          .remove-btn {
+               font-family: $titlefont;
+               font-weight: 400;
+               font-size: 15px;
+               text-transform: capitalize;
+               color: #333333;
+               transition: $transition;
+               i {
+                    margin-right: 3px;
+               }
+               &:hover {
+                    color: var(--hover-color);
+               }
+          }
+     }
+     .add-new-btn {
+          display: inline-block;
+          padding: 9px 25px;
+          background: #333333;
+          color: var(--white);
+          font-size: 15px;
+          font-weight: 400;
+          text-transform: capitalize;
+          transition: $transition;
+          .plus-round {
+               display: inline-block;
+               width: 18px;
+               height: 18px;
+               line-height: 1.2;
+               border-radius: 50%;
+               text-align: center;
+               border: 1px solid var(--white);
+               font-size: 14px;
+               padding-left: 1px;
+          }
+          &:hover {
+               color: var(--white);
+               background: var(--hover-color);
+          }
+     }
+}
+@media (max-width: 767px) {
+     .address-book-area .single-address {
+          flex-flow: row wrap;
+     }
+     .address-book-area .single-address .address-info {
+          margin-bottom: 15px;
+     }
+}
+@media (max-width: 480px) {
+     .address-book-area .single-address .eidt-btn {
+          font-size: 14px;
+     }
+}

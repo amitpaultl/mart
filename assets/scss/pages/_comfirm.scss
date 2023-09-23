@@ -1,0 +1,52 @@
+.comfirm-page-area {
+     .comfirm-text {
+          padding: 30px 0;
+          h2 {
+               margin-bottom: 15px;
+               font-size: 32px;
+               font-weight: 400;
+               text-transform: capitalize;
+               color: #333333;
+          }
+          p {
+               margin-bottom: 5px;
+               font-size: 16px;
+               line-height: 25px;
+               color: #666666;
+               span {
+                    font-weight: 500;
+                    color: #333333;
+               }
+          }
+          .success {
+               margin: 0 auto;
+               margin-top: 15px;
+               width: 90px;
+               height: 90px;
+               line-height: 102px;
+               background: #A5CA56;
+               color: var(--white);
+               border-radius: 50%;
+               i {
+                    font-size: 30px;
+               }
+          }
+     }
+}
+@media (max-width: 320px) {
+     .comfirm-page-area .comfirm-text h2 {
+          font-size: 26px;
+     }
+     .comfirm-page-area .comfirm-text p {
+          font-size: 14px;
+          line-height: 20px;
+     }
+     .comfirm-page-area .comfirm-text .success {
+          width: 60px;
+          height: 60px;
+          line-height: 67px;
+     }
+     .comfirm-page-area .comfirm-text .success i {
+          font-size: 24px;
+     }
+}

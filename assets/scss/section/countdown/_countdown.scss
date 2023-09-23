@@ -1,0 +1,47 @@
+/*-------------------------
+7.countdown-area
+--------------------------*/
+.countdown-contest {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: center;
+     column-gap: 20px;
+     .simply-section {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #000000;
+          width: 65px;
+          height: 65px;
+          text-align: center;
+          span {
+               display: block;
+          }
+          .simply-amount {
+               margin-bottom: 5px;
+               font-family: $bodyFont;
+               font-size: 2.4rem;
+               line-height: 1;
+               font-weight: 700;
+               color: var(--white);
+          }
+          .simply-word {
+               font-size: 1.6rem;
+               line-height: 1;
+               font-weight: 400;
+               color: var(--white);
+               text-transform: capitalize;
+          }
+     }
+}
+@media (max-width: 375px) {
+     .countdown-contest {
+          column-gap: 5px;
+     }
+     .countdown-contest .simply-section .simply-amount {
+          font-size: 2rem;
+     }
+     .countdown-contest .simply-section .simply-word {
+          font-size: 1.4rem;
+     }
+}

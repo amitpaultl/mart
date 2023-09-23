@@ -1,0 +1,51 @@
+/* Normal desktop :992px. */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	
+}
+
+@media (max-width: 1199px) {
+     
+}
+
+/* Tablet desktop :768px. */
+
+@media (min-width: 768px) and (max-width: 991px) {
+	
+}
+@media (max-width: 991px) {
+     .body-overlay {
+          display: block;
+     }
+}
+
+/*  Small mobile :320px. */
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.section{
+          padding: 6rem 0
+     }
+     .section-top{
+          padding: 6rem 0 0
+     }
+     .section-bottom{
+          padding: 0 0 6rem 0
+     }
+     .pb-70 {
+         padding-bottom: 3rem;
+     }
+     .section-wrap-1 {
+          padding: 30px 15px;
+     }
+     .mt-100 {
+          margin-top: 60px;
+     }
+}
+
+
+/* Large Mobile :577px. */
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+	
+}
+

@@ -1,0 +1,190 @@
+/*-------------------------
+18.sidebar-widget
+--------------------------*/
+.shope-sidebar-widget{
+     .single-widget {
+          margin-bottom: 3.5rem;
+          padding: 3rem 1.5rem;
+          background: #FFFFFF;
+          box-shadow: 0px 0px 40px rgba(182, 181, 181, 0.25);
+          &:last-child {
+               margin-bottom: 0;
+          }
+          .widget-title {
+               margin-bottom: 2rem;
+               font-size: 2.4rem;
+               font-weight: 600;
+               text-transform: capitalize;
+               color: #333333;
+          }
+     }
+     .categories-widget {
+          ul {
+               margin: 0;
+               padding: 0;
+               li {
+                    display: block;
+                    list-style: none;
+                    margin-bottom: 1.5rem;
+                    &:last-child {
+                         margin-bottom: 0;
+                    }
+                    a {
+                         display: block;
+                         font-size: 1.6rem;
+                         font-weight: 400;
+                         text-transform: capitalize;
+                         color: #666666;
+                         transition: $transition;
+                         &:hover {
+                              color: var(--hover-color);
+                         }
+                         .categories-count {
+                              float: right;
+                         }
+                    }
+               }
+          }
+     }
+     .tags-widget {
+          ul {
+               margin: 0;
+               padding: 0;
+               li {
+                    display: inline-block;
+                    list-style: none;
+                    margin-bottom: 10px;
+                    margin-right: 6px;
+                    a {
+                         display: inline-block;
+                         padding: 5px 10px;
+                         background: #EEEEEE;
+                         font-size: 1.5rem;
+                         font-weight: 400;
+                         text-transform: capitalize;
+                         color: #666666;
+                         transition: $transition;
+                         &:hover {
+                              background: var(--hover-color);
+                              color: var(--white);
+                         }
+                    }
+               }
+          }
+     }
+     .filter-price-widget {
+          .price-range-area {
+               margin-top: 20px;
+               label {
+                    margin: 0;
+                    line-height: 1;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    color: #000000;
+                    margin-right: 10px;
+               }
+               input {
+                    padding: 0;
+                    border: none;
+                    height: 20px;
+                    width: 150px;
+                    font-family: $bodyFont;
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    color: #333333;
+               }
+          }
+          #slider-range {
+               background: #FBD100;
+               border: none;
+               height: 4px;
+               border-radius: 0;
+               .ui-slider-handle {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    border: none;
+                    background: #FBD100;
+                    top: -3px;
+                    margin-left: -3px;
+               }
+               .ui-widget-header {
+                    background: #FBD100;
+               }
+          }
+     }
+     .filter-color-widget {
+          ul {
+               margin: 0;
+               padding: 0;
+               li {
+                    list-style: none;
+                    display: block;
+                    margin-bottom: 1.5rem;
+                    &:last-child {
+                         margin-bottom: 0;
+                    }
+                    a {
+                         position: relative;
+                         display: block;
+                         font-size: 1.5rem;
+                         font-weight: 400;
+                         text-transform: capitalize;
+                         color: #666666;
+                         padding-left: 30px;
+                    }
+                    .categories-count {
+                         float: right;
+                    }
+                    .color {
+                         display: inline-block;
+                         position: absolute;
+                         left: 0;
+                         top: 6px;
+                         width: 1.6rem;
+                         height: 1.6rem;
+                         border-radius: 50%;
+                         border: 3px solid var(--white);
+                         box-shadow: 0px 0px 8px rgba(153, 149, 149, 0.25);
+                         background: white;
+                         &.red {
+                              background: #F01E1E;
+                         }
+                         &.black {
+                              background: #504841;
+                         }
+                         &.bule {
+                              background: #158FFF;
+                         }
+                         &.brown {
+                              background: #FEC687;
+                         }
+                         &.pink {
+                              background: #FF15A1;
+                         }
+                         &.yellow {
+                              background: #FF8615;
+                         }
+                    }
+               }
+
+          }
+     }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+	.shope-sidebar-widget .categories-widget ul li a {
+          font-size: 1.4rem;
+     }
+     .shope-sidebar-widget .filter-color-widget ul li a {
+          font-size: 1.4rem;
+     }
+     .shope-sidebar-widget .tags-widget ul li a {
+          padding: 5px 8px;
+          font-size: 1.2rem;
+     }
+}
+@media (max-width: 767px) {
+     .shope-sidebar-widget {
+          margin-top: 50px;
+     }
+}

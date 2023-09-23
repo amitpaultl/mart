@@ -1,0 +1,130 @@
+/*-------------------------
+20.comments
+--------------------------*/
+.comment-post {
+     margin-bottom: 7.5rem;
+     .section-title {
+          margin-bottom: 2.5rem;
+          font-size: 2.4rem;
+          font-weight: 600;
+          text-transform: capitalize;
+          color: var(--black);
+     }
+     .comments-list {
+          .single-comment {
+               margin-bottom: 3rem;
+               .children {
+                    margin-top: 3rem;
+                    margin-left: 13rem;
+               }
+               .comments-avatar {
+                    margin-right: 3rem;
+                    width: 100px;
+                    height: 100px;
+               }
+               .author-name {
+                    margin-bottom: .3rem;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color: #333333;
+                    a {
+                         color: #333333;
+                         transition: $transition;
+                         &:hover {
+                              color: var(--hover-color);
+                         }
+                    }
+               }
+               .comment-text {
+                    margin-bottom: .2rem;
+                    font-size: 1.6rem;
+                    font-weight: 2.8rem;
+                    color: #666666;
+               }
+               .commment-meta {
+                    a {
+                         font-size: 1.6rem;
+                         font-weight: 400;
+                         text-transform: capitalize;
+                         color: #666666;
+                         transition: $transition;
+                         margin-right: 2rem;
+                         i {
+                              margin-right: 5px;
+                         }
+                         &:hover {
+                              color: var(--hover-color);
+                         }
+                    }
+               }
+          }
+     }
+}
+.comments {
+     .section-title {
+          margin-bottom: 2.5rem;
+          font-size: 2.4rem;
+          font-weight: 600;
+          text-transform: capitalize;
+          color: var(--black);
+     }
+}
+.comments-form {
+     padding: 5rem 3rem;
+     background: #FDFDF5;
+     .form-group {
+          margin-bottom: 3rem;
+          .form-control {
+               width: 100%;
+               height: 50px;
+               border: 1px solid #EEEEEE;
+               background: var(--white);
+               border-radius: 0;
+               font-family: $bodyFont;
+               font-size: 1.6rem;
+               font-weight: 400;
+               color: #666666;
+               padding: 1.5rem 2rem ;
+          }
+          .comment-box {
+               height: 15rem;
+          }
+     }
+}
+@media (max-width: 1199px) {
+     .comment-post .comments-list .single-comment .comments-avatar {
+          margin-right: 2rem;
+          width: 70px;
+          height: 70px;
+     }
+     .comment-post .comments-list .single-comment .children {
+          margin-top: 3rem;
+          margin-left: 8rem;
+     }
+}
+@media (max-width: 991px) {
+     .comment-post .comments-list .single-comment .comment-text {
+          font-size: 1.4rem;
+          line-height: 2.4rem;
+     }
+     .comment-post .comments-list .single-comment .commment-meta a {
+          font-size: 1.4rem;
+          margin-right: 1.5rem;
+     }
+}
+@media (max-width: 480px) {
+     .comment-post .comments-list .single-comment .children {
+          margin-left: 1rem;
+     }
+     .comment-post .comments-list .single-comment .comments-avatar {
+          margin-right: 1rem;
+          width: 60px;
+          height: 60px;
+     }
+}
+@media (max-width: 375px) {
+     .comments-form {
+          padding: 3rem 2rem;
+     }
+}

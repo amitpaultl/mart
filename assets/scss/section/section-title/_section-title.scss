@@ -1,0 +1,30 @@
+/*-------------------------
+8.section-title
+--------------------------*/
+.section-title {
+     margin-top: -3px;
+     .title {
+          margin-bottom: .8rem;
+          font-size: 3.2rem;
+          font-weight: 600;
+          text-transform: capitalize;
+          color: #333333;
+     }
+     .sub-title {
+          margin: 0;
+          font-size: 1.6rem;
+          line-height: 2.8rem;
+          color: #666666;
+     }
+}
+.section-top-header {
+     margin-bottom: 25px;
+     .section-inner-title {
+          margin: 0;
+          font-family: $titlefont;
+          font-size: 24px;
+          font-weight: 600;
+          text-transform: capitalize;
+          color: #333333;
+     }
+}
